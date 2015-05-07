@@ -39,3 +39,6 @@ onlyPrefixes: true
 
 # Enable this to enable line breaks between each staff member's name.
 lineBreaks: true
+
+# This sets the color for displayed usernames.
+usernameColor: 'f'

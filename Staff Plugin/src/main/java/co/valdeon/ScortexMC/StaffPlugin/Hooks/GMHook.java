@@ -1,6 +1,7 @@
 package co.valdeon.ScortexMC.StaffPlugin.Hooks;
 
 import co.valdeon.ScortexMC.StaffPlugin.StaffPlugin;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.anjocaido.groupmanager.GroupManager;
 import org.anjocaido.groupmanager.permissions.AnjoPermissionsHandler;
@@ -26,6 +27,6 @@ public class GMHook {
     }
 
     public static String getProperTitle(Player p, AnjoPermissionsHandler h) {
-        return StaffPlugin.onlyPrefix ? ChatColor.translateAlternateColorCodes('&', h.getGroupPrefix(h.getGroup(p.getName()))) : ChatColor.translateAlternateColorCodes('&', h.getGroupPrefix(h.getGroup(p.getName())) + h.getGroup(p.getName()) + " |&f");
+        return StaffPlugin.onlyPrefixes ? ChatColor.translateAlternateColorCodes('&', h.getGroupPrefix(h.getGroup(p.getName()))) : ChatColor.translateAlternateColorCodes('&', h.getGroupPrefix(h.getGroup(p.getName())) + h.getGroup(p.getName()) + " |&f");
     }
 }

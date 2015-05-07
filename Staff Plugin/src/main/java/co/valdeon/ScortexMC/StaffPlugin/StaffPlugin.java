@@ -28,7 +28,7 @@ public class StaffPlugin extends JavaPlugin{
     public static String noStaffMessage;
     public static String messageColor2;
     public static String separator;
-    public static boolean onlyPrefix;
+    public static boolean onlyPrefixes;
     public static boolean lineBreaks;
     public static String usernameColor;
 
@@ -89,7 +89,7 @@ public class StaffPlugin extends JavaPlugin{
         messageColor = getConfig().getString("messagecolor");
         messageColor2 = getConfig().getString("messagesubcolor");
         separator = getConfig().getString("separator");
-        onlyPrefix = getConfig().getBoolean("onlyPrefix");
+        onlyPrefixes = getConfig().getBoolean("onlyPrefixes");
         lineBreaks = getConfig().getBoolean("lineBreaks");
         usernameColor = getConfig().getString("usernameColor");
     }
