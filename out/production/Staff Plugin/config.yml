@@ -1,0 +1,41 @@
+# This is the main color of each message sent by the system.
+# messagecolor: '8'
+messagecolor: '8'
+
+# This is the highlight color of each message sent by the system.
+# messagesubcolor: '6'
+messagesubcolor: '6'
+
+# This message is sent when there are no staff members online.
+# failure: 'Sorry, there are no staff currently online.'
+failure: 'Sorry, there are no staff currently online.'
+
+# This message is sent when there is only one staff member online.
+# "&{0}": The main message color.
+# "{1}": The list of staff members.
+# "&{2}": The message highlight color.
+# success1: '&{0}There is currently &{2}1&{0} staff member online: {1}'
+success1: '&{0}There is currently &{2}1&{0} staff member online: {1}'
+
+# This message is sent when there are more than 1 or exactly 0 staff members online.
+# "&{0}": The main message color.
+# "{1}": The number of online staff members.
+# "{2}": The list of staff members.
+# "&{3}": The message highlight color.
+
+# successmanyor0: '&{0}There are currently &{3}{1}&{0} staff members online: {2}'
+successmanyor0: '&{0}There are currently &{3}{1}&{0} staff members online: {2}'
+
+# These are the ranks (correct spelling and capitalization are necessary) that the plugin can interpret as "staff" according to GroupManger
+# staffranks: [Helper, Moderator, Admin, Co-Owner, Owner, Developer]
+staffranks: [Helper, Moderator, Admin, Co-Owner, Owner, Developer]
+
+# This is the separation symbol between a user's group and their username.
+# separator: '|'
+separator: '|'
+
+# Enable this if you have an issue with names displaying twice.
+onlyPrefixes: true
+
+# Enable this to enable line breaks between each staff member's name.
+lineBreaks: true

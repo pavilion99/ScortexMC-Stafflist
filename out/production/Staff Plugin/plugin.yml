@@ -1,0 +1,39 @@
+name: StafflistPlugin
+main: co.valdeon.ScortexMC.StaffPlugin.StaffPlugin
+version: 1.1.0
+description: Provides a method for players to see online staff members.
+author: pavilion99
+depend: [GroupManager]
+database: false
+prefix: StaffList
+permissions:
+  ScortexMC.staff.*:
+    description: Gives full control to the stafflist plugin.
+    default: false
+    children:
+      ScortexMC.staff.admin: true
+  ScortexMC.staff:
+    description: Allows you to view online staff.
+    default: true
+  ScortexMC.staff.admin:
+    description: Allows you to administrate the stafflist plugin.
+    default: false
+    children:
+      ScortexMC.staff.admin.reload: true
+  ScortexMC.staff.admin.reload:
+    description: Allows you to reload the stafflist plugin.
+    default: false
+    children:
+      ScortexMC.staff.admin: true
+commands:
+  staff:
+    description: See online staff.
+    permission: ScortexMC.staff
+    permission-message: You don't have permission to do this.
+    usage: This command takes no arguments. /<command>
+  stafflistadmin:
+    description: Administrate the staff list plugin.
+    aliases: [sla, stafflista]
+    permission: ScortexMC.staff.admin
+    permission-message: You don't have permission to do this.
+    usage: This command must be run to reload the plugin. /<command> reload
