@@ -30,6 +30,7 @@ public class StaffPlugin extends JavaPlugin{
     public static String separator;
     public static boolean onlyPrefix;
     public static boolean lineBreaks;
+    public static String usernameColor;
 
     @Override
     public void onEnable() {
@@ -72,6 +73,7 @@ public class StaffPlugin extends JavaPlugin{
         noStaffMessage = null;
         separator = null;
         messageColor2 = null;
+        usernameColor = null;
     }
 
     public static GMHook getGMHook() {
@@ -89,6 +91,7 @@ public class StaffPlugin extends JavaPlugin{
         separator = getConfig().getString("separator");
         onlyPrefix = getConfig().getBoolean("onlyPrefix");
         lineBreaks = getConfig().getBoolean("lineBreaks");
+        usernameColor = getConfig().getString("usernameColor");
     }
 
 }

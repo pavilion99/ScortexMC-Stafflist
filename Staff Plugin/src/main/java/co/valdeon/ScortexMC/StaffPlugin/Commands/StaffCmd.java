@@ -36,9 +36,9 @@ public class StaffCmd implements CommandExecutor{
             while(i.hasNext()) {
                 Player p = (Player) i.next();
                 finalStaffList += StaffPlugin.staffList.get(p);
-                finalStaffList += " " + p.getName();
+                finalStaffList += " " + StaffPlugin.usernameColor + p.getName();
                 if (i.hasNext())
-                    finalStaffList += ", ";
+                    finalStaffList += "&" + StaffPlugin.messageColor + ", ";
             }
 
             if (staff.size() == 1)
@@ -53,7 +53,7 @@ public class StaffCmd implements CommandExecutor{
 
             while(i.hasNext()) {
                 Player p = (Player) i.next();
-                sender.sendMessage(StaffPlugin.staffList.get(p) + " " + p.getName());
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', StaffPlugin.staffList.get(p) + " &" + StaffPlugin.usernameColor + p.getName()));
             }
         }
 
